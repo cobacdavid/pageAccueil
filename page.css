@@ -43,7 +43,7 @@ body{
     width: 90%;
     height: 100%;
     /* pour l'effet visuel */
-    transition: 0.25s ease;
+    transition: var(--dureeAnimation) ease;
     opacity: 0.65;
     filter: grayscale(100%);
 }
