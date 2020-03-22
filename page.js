@@ -74,13 +74,8 @@ function constructionPage() {
 //
 // récupération de l'adresse complète
 let urlPage = window.location;
-/* gestion du paramètre (fonctionne en local)
-   ne semble pas fonctionner une fois en ligne
-   ... urlParametres est alors vide !
-*/
+/* gestion du paramètre */
 let urlParametres = new URLSearchParams(urlPage.search);
-console.log(urlPage);
-console.log(urlParametres);
 if (urlPage != "" && urlParametres.has('parligne')) {
     var sitesParLigne = urlParametres.get('parligne');
 } else {
