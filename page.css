@@ -1,0 +1,76 @@
+:root {
+    --couleurFond: black;
+    --dureeAnimation: .2s;
+    --rotationElement: 5deg;
+}
+/* fond général */
+body{
+    background-color: var(--couleurFond);
+}
+
+/* la disposition générale (un div)*/
+.conteneurGlobal {
+    width: 95%;
+    /* le contenu sera flexible */
+    display: flex;
+    /* centrage horizontal du div sur la page */ 
+    margin:0 auto;
+}
+
+/* les cellules du conteneur général sont aussi des conteneurs div */ 
+.conteneurGlobal div {
+    background-color: var(--couleurFond);
+    /* obéit à la règle flex du conteneur global */
+    flex: 1;
+    border: 10px solid var(--couleurFond);
+}
+
+/* les liens dans les cellules */
+.lien {
+    /* pas de rectangle en pointillés entourant
+       habituellement les liens
+   */
+    outline: 0;
+}
+
+/* les images */
+.logo {
+    /* on remplit le conteneur
+       pour le height, ça permet d'être centré verticalement
+       éventuellement ajouter un :
+       vertical-align: middle;     
+   */
+    width: 90%;
+    height: 100%;
+    /* pour l'effet visuel */
+    transition: 0.25s ease;
+    opacity: 0.65;
+    filter: grayscale(100%);
+}
+
+
+/* interaction passage au-dessus avec l'image */
+.logo:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.1) rotate(var(--rotationElement)); 
+}
+
+
+/* VERSION duree de rotation (animation infinie) */
+
+/* /\* interaction passage au-dessus avec l'image *\/ */
+/* .logo:hover { */
+/*     opacity: 1; */
+/*     filter: grayscale(0%); */
+/*     animation: transformation var(--dureeAnimation) infinite; */
+/* } */
+
+/* /\* animation événement .logo:hover *\/ */
+/* @keyframes transformation { */
+/*     0% {transform: rotate(0deg);} */
+/*     25% {transform: rotate(5deg);} */
+/*     50% {transform: rotate(0deg);} */
+/*     75% {transform: rotate(-5deg);} */
+/*     100% {transform: rotate(0deg);} */
+/* } */
