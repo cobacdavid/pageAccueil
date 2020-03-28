@@ -61,6 +61,7 @@ function constructionPage() {
         let s = 0;
         while (s < sitesParLigne && sites.length - sitesParLigne * l - s > 0) {
             let bloc = ajoute_site(sites[sitesParLigne * l + s]);
+            bloc.style.zIndex = 1;
             div_cont.appendChild(bloc);
             s++;
         }
@@ -69,22 +70,28 @@ function constructionPage() {
 }
 
 function changeAngleAnimation() {
-    /* VERSION duree de rotation (animation infinie) */
-    // document.documentElement.style.setProperty('--dureeAnimation', Math.random() + 's');
+    this.parentNode.parentNode.style.zIndex = 2;
     let maxi = angleRotation;
     document.documentElement.style.setProperty('--rotationElement',
                                                Math.floor(Math.random() * maxi) - maxi / 2 + 'deg');
 }
 
-function mouseOverImages() {
+function reprendPlace() {
+    let position = this.parentNode.parentNode.style.zIndex;
+    this.parentNode.parentNode.style.zIndex = 1;
+}
+
+function mouseImages() {
     let images = document.getElementsByClassName("logo");
     for (let i=0; i < images.length; i++) {
         images[i].onmouseover = changeAngleAnimation;
+        images[i].onmouseout = reprendPlace;
     }
 }
 
+
 function evenementiel() {
-    mouseOverImages();
+    mouseImages();
 }
 
 //
