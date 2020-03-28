@@ -1,7 +1,8 @@
 :root {
     --couleurFond: black;
     --dureeAnimation: .2s;
-    --rotationElement: 5deg;
+    --rotationElement: 0deg;
+    --zoom: 1;
 }
 /* fond général */
 body{
@@ -53,24 +54,5 @@ body{
 .logo:hover {
     opacity: 1;
     filter: grayscale(0%);
-    transform: scale(1.1) rotate(var(--rotationElement)); 
+    transform: scale(var(--zoom)) rotate(var(--rotationElement)); 
 }
-
-
-/* VERSION duree de rotation (animation infinie) */
-
-/* /\* interaction passage au-dessus avec l'image *\/ */
-/* .logo:hover { */
-/*     opacity: 1; */
-/*     filter: grayscale(0%); */
-/*     animation: transformation var(--dureeAnimation) infinite; */
-/* } */
-
-/* /\* animation événement .logo:hover *\/ */
-/* @keyframes transformation { */
-/*     0% {transform: rotate(0deg);} */
-/*     25% {transform: rotate(5deg);} */
-/*     50% {transform: rotate(0deg);} */
-/*     75% {transform: rotate(-5deg);} */
-/*     100% {transform: rotate(0deg);} */
-/* } */

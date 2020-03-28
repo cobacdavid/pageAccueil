@@ -67,6 +67,26 @@ function constructionPage() {
         document.body.appendChild(div_cont);
     }
 }
+
+function changeAngleAnimation() {
+    /* VERSION duree de rotation (animation infinie) */
+    // document.documentElement.style.setProperty('--dureeAnimation', Math.random() + 's');
+    let maxi = angleRotation;
+    document.documentElement.style.setProperty('--rotationElement',
+                                               Math.floor(Math.random() * maxi) - maxi / 2 + 'deg');
+}
+
+function mouseOverImages() {
+    let images = document.getElementsByClassName("logo");
+    for (let i=0; i < images.length; i++) {
+        images[i].onmouseover = changeAngleAnimation;
+    }
+}
+
+function evenementiel() {
+    mouseOverImages();
+}
+
 //
 // récupération de l'adresse complète
 let urlPage = window.location;
@@ -77,12 +97,25 @@ if (urlPage != "" && urlParametres.has('parligne')) {
 } else {
     var sitesParLigne = 2;  
 }
+if (urlPage != "" && urlParametres.has('rotation')) {
+    var angleRotation = urlParametres.get('rotation');
+} else {
+    var angleRotation = 30;  
+}
+if (urlPage != "" && urlParametres.has('zoom')) {
+    var zoom = urlParametres.get('zoom');
+} else {
+    var zoom = 1.5;  
+}
+document.documentElement.style.setProperty('--zoom', zoom);
+//
 //
 var sites = "";
 readTextFile("./sites.json",
              function (text) {
                  sites = JSON.parse(text);
                  constructionPage();
+                 evenementiel();
              }
             );
 //
