@@ -31,13 +31,9 @@ function ajoute_site (objet) {
     let logo = document.createElement("img");
     logo.classList.add("logo");
     logo.src = objet.image;
-    // à pouvoir enlever si possible : voir animation.js
-   //  logo.onmouseover = changeAngleAnimation;
-    //
     lien.appendChild(logo);
     //
     let mon_div = document.createElement("div");
-    //
     mon_div.classList.add("conteneur");
     mon_div.appendChild(lien);
     //
