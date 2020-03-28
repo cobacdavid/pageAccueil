@@ -32,7 +32,7 @@ function ajoute_site (objet) {
     logo.classList.add("logo");
     logo.src = objet.image;
     // à pouvoir enlever si possible : voir animation.js
-    logo.onmouseover = changeAngleAnimation;
+   //  logo.onmouseover = changeAngleAnimation;
     //
     lien.appendChild(logo);
     //

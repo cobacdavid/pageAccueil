@@ -6,6 +6,17 @@ function changeAngleAnimation() {
                                                Math.floor(Math.random() * maxi) - maxi / 2 + 'deg');
 }
 
+function mouseOverImages() {
+    let images = document.getElementsByClassName("logo");
+    for (let i=0; i < images.length; i++) {
+        images[i].onmouseover = changeAngleAnimation;
+    }
+}
+
+function evenementiel() {
+    mouseOverImages();
+}
+
 
 /* ATTENTION ce qui suit en fonctionne pas :(
    donc pour l'instant codage en dur sur page.js
@@ -20,10 +31,10 @@ function changeAngleAnimation() {
    le chargment complet de la page -> événement DOMContentLoaded
 */
 
-window.addEventListener('DOMContentLoaded', function() {
-    let images = document.getElementsByClassName("logo");
-    for (let i=0; i < images.length; i++) {
-        images[i].onmouseover = changeAngleAnimation;
-    }
-});
+// window.addEventListener('DOMContentLoaded', function() {
+//     let images = document.getElementsByClassName("logo");
+//     for (let i=0; i < images.length; i++) {
+//         images[i].onmouseover = changeAngleAnimation;
+//     }
+// });
 
