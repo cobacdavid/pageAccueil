@@ -2,41 +2,81 @@
         {
             "nom":"DuckDuckGo",
             "url":"https://www.duckduckgo.com/",
-            "image":"https://upload.wikimedia.org/wikipedia/en/9/90/The_DuckDuckGo_Duck.png"
+            "image":"https://upload.wikimedia.org/wikipedia/en/9/90/The_DuckDuckGo_Duck.png",
+            "bg": "back-duck.png"
         },
         {
             "nom":"YouTube",
             "url":"https://www.youtube.com/",
-            "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/768px-Youtube_icon.svg.png"
+            "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/768px-Youtube_icon.svg.png",
+            "bg": "back-youtube.png"
         },
         {
             "nom":"StackExchange",
             "url":"https://stackexchange.com/",
-            "image":"https://www.feirox.com/rivu/2014/01/Stack-Exchange-1.png"
+            "image":"https://www.feirox.com/rivu/2014/01/Stack-Exchange-1.png",
+            "bg": "back-stack.png"
         },
         {
             "nom":"ProNote",
             "url":"http://pronote.lyc-moulin-49.ac-nantes.fr/pronote/professeur.html?fd=1&login=true",
-            "image":"https://www.index-education.com/contenu/img/fr/faq/icone-PRONOTE-application.png"
+            "image":"https://www.index-education.com/contenu/img/fr/faq/icone-PRONOTE-application.png",
+            "bg": "back-pronote.png"
         },
         {
             "nom":"Lycée",
             "url":"https://jean-moulin.paysdelaloire.e-lyco.fr/",
-            "image":"https://cdn4.iconfinder.com/data/icons/ios-web-user-interface-multi-circle-flat-vol-3/512/Bag_briefcase_business_case_job_portfolio_suitcase-512.png"
+            "image":"https://cdn4.iconfinder.com/data/icons/ios-web-user-interface-multi-circle-flat-vol-3/512/Bag_briefcase_business_case_job_portfolio_suitcase-512.png",
+            "bg": "back-jeanmoulin.png"
         },
         {
             "nom":"Awesome doc",
             "url":"https://awesomewm.org/apidoc/",
-            "image":"https://awesomewm.org/apidoc/images/AUTOGEN_wibox_logo_logo_and_name.svg"},
+            "image":"https://awesomewm.org/apidoc/images/AUTOGEN_wibox_logo_logo_and_name.svg",
+            "bg": "back-awesome.png"
+        },
         {
             "nom":"Twitter",
             "url":"https://twitter.com/home",
-            "image":"https://cdn2.iconfinder.com/data/icons/social-networking-package-1-1/512/networks_-_social_-_web-07-2-512.png"
+            "image":"https://cdn2.iconfinder.com/data/icons/social-networking-package-1-1/512/networks_-_social_-_web-07-2-512.png",
+            "bg": "back-twitter.png"
         },
         {
             "nom":"GMX",
             "url":"https://www.gmx.fr/",
-            "image":"https://buyaccbulk.com/wp-content/uploads/2018/01/gmx1.png"
+            "image":"https://buyaccbulk.com/wp-content/uploads/2018/01/gmx1.png",
+            "bg": "back-gmx.png"
+        },
+        {
+            "nom":"20minutes",
+            "url":"https://www.20minutes.fr/",
+            "image":"https://www.summit-foundation.org/wp/wp-content/uploads/2015/07/20_minutes_Suisse_2013_logo_3-01.png",
+            "bg": "back-20minutes.png"
+        },
+        {
+            "nom":"Amazon",
+            "url":"https://www.amazon.fr/",
+            "image":"https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/Amazon-512.png",
+            "bg": "back-amazon.png"
+        },
+        {
+            "nom":"Gmail",
+            "url":"https://mail.google.com/mail/",
+            "image":"https://thebottomline.as.ucsb.edu/wp-content/uploads/2018/05/Gmail_logo.max-2800x2800-1024x1024.png",
+            "bg": "back-gmail.png"
+        },
+        {
+            "nom":"Dealabs",
+            "url":"https://www.dealabs.com/",
+            "image":"https://lh3.googleusercontent.com/-phA57eY5Txw/VHNddD1-6DI/AAAAAAAABgo/WqC42siKe70/s512-p/Icon.png",
+            "bg": "back-dealabs.png"
+        },
+        {
+            "nom":"Github",
+            "url":"https://github.com/",
+            "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png",
+            "bg": "back-github.png"
         }
+    
     ]
 
