@@ -16,11 +16,11 @@ function readTextFile(file, callback) {
         if (rawFile.readyState === 4 && rawFile.status == "200") {
             callback(rawFile.responseText);
         }
-    }
+    };
     rawFile.send(null);
 }
 //
-function ajoute_site (objet) {
+function ajouteSite (objet) {
     let texte = objet.nom;
     //
     let lien = document.createElement("a");
@@ -31,6 +31,7 @@ function ajoute_site (objet) {
     let logo = document.createElement("img");
     logo.classList.add("logo");
     logo.src = objet.image;
+    logo.alt = objet.bg;
     lien.appendChild(logo);
     //
     let mon_div = document.createElement("div");
@@ -60,7 +61,7 @@ function constructionPage() {
         */
         let s = 0;
         while (s < sitesParLigne && sites.length - sitesParLigne * l - s > 0) {
-            let bloc = ajoute_site(sites[sitesParLigne * l + s]);
+            let bloc = ajouteSite(sites[sitesParLigne * l + s]);
             bloc.style.zIndex = 1;
             div_cont.appendChild(bloc);
             s++;
@@ -70,6 +71,7 @@ function constructionPage() {
 }
 
 function changeAngleAnimation() {
+    document.body.style.backgroundImage = "url(" + this.alt + ")";
     this.parentNode.parentNode.style.zIndex = 2;
     let maxi = angleRotation;
     document.documentElement.style.setProperty('--rotationElement',
@@ -77,6 +79,7 @@ function changeAngleAnimation() {
 }
 
 function reprendPlace() {
+    document.body.style.backgroundImage = "var(--couleurFond)";
     let position = this.parentNode.parentNode.style.zIndex;
     this.parentNode.parentNode.style.zIndex = 1;
 }
@@ -107,12 +110,12 @@ if (urlPage != "" && urlParametres.has('parligne')) {
 if (urlPage != "" && urlParametres.has('rotation')) {
     var angleRotation = urlParametres.get('rotation');
 } else {
-    var angleRotation = 30;  
+    var angleRotation = 0;  
 }
 if (urlPage != "" && urlParametres.has('zoom')) {
     var zoom = urlParametres.get('zoom');
 } else {
-    var zoom = 1.5;  
+    var zoom = 1;  
 }
 document.documentElement.style.setProperty('--zoom', zoom);
 //
