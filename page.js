@@ -45,7 +45,7 @@ function ajouteSite (objet) {
     let logo = document.createElement("img");
     logo.classList.add("logo");
     logo.src = objet.image;
-    logo.alt = objet.bg;
+    logo.alt = "./images/back/" + objet.bg;
     lien.appendChild(logo);
     //
     let mon_div = document.createElement("div");

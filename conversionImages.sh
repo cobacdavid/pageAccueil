@@ -11,7 +11,10 @@
 #   Idée de départ par
 #   https://github.com/OneGuyy
 
+cd images/back/
 rm back-*
+cd ../copieEcrans/
+#
 for image in *.png; do
     convert $image \
             -virtual-pixel transparent \
@@ -20,3 +23,5 @@ for image in *.png; do
             -blur 10x2 \
             back-$image
 done
+#
+mv back-* ../back/
