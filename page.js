@@ -124,17 +124,17 @@ let urlParametres = new URLSearchParams(urlPage.search);
 if (urlPage != "" && urlParametres.has('parligne')) {
     var sitesParLigne = urlParametres.get('parligne');
 } else {
-    var sitesParLigne = 2;  
+    var sitesParLigne = 5;  
 }
 if (urlPage != "" && urlParametres.has('rotation')) {
     var angleRotation = urlParametres.get('rotation');
 } else {
-    var angleRotation = 0;  
+    var angleRotation = 45;  
 }
 if (urlPage != "" && urlParametres.has('zoom')) {
     var zoom = urlParametres.get('zoom');
 } else {
-    var zoom = 1;  
+    var zoom = 1.5;  
 }
 document.documentElement.style.setProperty('--zoom', zoom);
 //

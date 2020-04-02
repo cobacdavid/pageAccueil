@@ -21,16 +21,18 @@
 body {
     background-color: var(--couleurFond);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 /* la disposition générale (un div)*/
 .conteneurGlobal {
-    width: 95%;
+    width: 80%;
     /* le contenu sera flexible */
     display: flex;
     /* centrage horizontal du div sur la page */ 
-    margin:0 auto;
+    margin: 0 auto;
+    margin-top: 3%;
 }
 
 /* les cellules du conteneur général sont aussi des conteneurs div */ 
@@ -38,7 +40,7 @@ body {
     /* background-color: var(--couleurFond); */
     /* obéit à la règle flex du conteneur global */
     flex: 1;
-    border: 10px;
+    border: 20px;
     /* solid var(--couleurFond); */
 }
 
