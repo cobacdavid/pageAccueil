@@ -1,3 +1,16 @@
+#!/bin/bash
+
+#  Fichier créé par
+#   David Cobac
+#   Dépôt GIT : https://github.com/cobacdavid
+#   Nom du projet : pageAccueil
+#   Online test : http://cobac.free.fr/
+#   License : CC--BY-NC-SA
+#   sauf code snippet venant de stackoverflow dans page.js
+#   sur la lecture d'un fichier JSON
+#   Idée de départ par
+#   https://github.com/OneGuyy
+
 rm back-*
 for image in *.png; do
     convert $image \

@@ -1,3 +1,16 @@
+/* Fichier créé par
+   David Cobac
+   Dépôt GIT : https://github.com/cobacdavid
+   Nom du projet : pageAccueil
+   Online test : http://cobac.free.fr/
+   License : CC--BY-NC-SA
+   sauf code snippet venant de stackoverflow dans page.js
+   sur la lecture d'un fichier JSON
+   Idée de départ par
+   https://github.com/OneGuyy
+*/
+
+
 /* Fonction suivante venant de
    https://stackoverflow.com/questions/19706046/how-to-read-an-external-local-json-file-in-javascript#24378510
    
@@ -19,7 +32,8 @@ function readTextFile(file, callback) {
     };
     rawFile.send(null);
 }
-//
+
+
 function ajouteSite (objet) {
     let texte = objet.nom;
     //
@@ -40,7 +54,8 @@ function ajouteSite (objet) {
     //
     return mon_div;
 }
-//
+
+
 function constructionPage() {
     // nombre de lignes attendues
     let nbLignes = Math.floor(sites.length / sitesParLigne);
@@ -70,6 +85,7 @@ function constructionPage() {
     }
 }
 
+
 function changeAngleAnimation() {
     document.body.style.backgroundImage = "url(" + this.alt + ")";
     this.parentNode.parentNode.style.zIndex = 2;
@@ -78,11 +94,13 @@ function changeAngleAnimation() {
                                                Math.floor(Math.random() * maxi) - maxi / 2 + 'deg');
 }
 
+
 function reprendPlace() {
     document.body.style.backgroundImage = "var(--couleurFond)";
     let position = this.parentNode.parentNode.style.zIndex;
     this.parentNode.parentNode.style.zIndex = 1;
 }
+
 
 function mouseImages() {
     let images = document.getElementsByClassName("logo");
@@ -97,7 +115,8 @@ function evenementiel() {
     mouseImages();
 }
 
-//
+
+
 // récupération de l'adresse complète
 let urlPage = window.location;
 /* gestion du paramètre */
@@ -119,7 +138,6 @@ if (urlPage != "" && urlParametres.has('zoom')) {
 }
 document.documentElement.style.setProperty('--zoom', zoom);
 //
-//
 var sites = "";
 readTextFile("./sites.json",
              function (text) {
@@ -128,5 +146,4 @@ readTextFile("./sites.json",
                  evenementiel();
              }
             );
-//
 //
