@@ -25,14 +25,19 @@ body {
     background-attachment: fixed;
 }
 
+.conteneurGeneral {
+    width: 100%;
+    margin-top: 3%;
+}
+
+
 /* la disposition générale (un div)*/
 .conteneurGlobal {
-    width: 80%;
+    width: 85%;
     /* le contenu sera flexible */
     display: flex;
     /* centrage horizontal du div sur la page */ 
     margin: 0 auto;
-    margin-top: 3%;
 }
 
 /* les cellules du conteneur général sont aussi des conteneurs div */ 

@@ -57,6 +57,8 @@ function ajouteSite (objet) {
 
 
 function constructionPage() {
+    let div_gen = document.createElement("div");
+    div_gen.classList.add('conteneurGeneral');
     // nombre de lignes attendues
     let nbLignes = Math.floor(sites.length / sitesParLigne);
     /* s'il y a un reste de sites sur la dernière ligne
@@ -81,8 +83,9 @@ function constructionPage() {
             div_cont.appendChild(bloc);
             s++;
         }
-        document.body.appendChild(div_cont);
+        div_gen.appendChild(div_cont);
     }
+    document.body.appendChild(div_gen);
 }
 
 
