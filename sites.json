@@ -85,9 +85,16 @@
     },
     {
         "nom": "Wikipedia",
-        "url": "https://www.wikiwand.com/",
+        "url": "https://www.wikipedia.com/",
         "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/WikiWand_Logo.png",
         "bg": "back-wikipedia.png"
+    },
+    {
+        "nom": "Google Music",
+        "url": "https://play.google.com/music/listen",
+        "image": "https://img.talkandroid.com/uploads/2013/12/google_play_music_icon.png",
+        "bg": "back-googlemusic.png"
+        
     }
 ]
 
