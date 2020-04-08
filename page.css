@@ -15,6 +15,8 @@
     --dureeAnimation: .2s;
     --rotationElement: 0deg;
     --zoom: 1;
+    font-family: Inconsolata;
+    font-size: 30px;
 }
 
 /* fond général */
@@ -25,14 +27,32 @@ body {
     background-attachment: fixed;
 }
 
-.conteneurGeneral {
+.conteneurRecherche {
+    padding: 50px;
+}
+
+#barreRecherche {
+    width: 100%;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: white;
+    background-color: var(--couleurFond);
+    opacity: .5;
+    text-align: center;
+    border: 0pt;
+}
+
+.submitRecherche {
+    display: none;
+}
+
+.conteneurGeneralIcones {
     width: 100%;
     margin-top: 3%;
 }
 
-
 /* la disposition générale (un div)*/
-.conteneurGlobal {
+.conteneurLigne {
     width: 85%;
     /* le contenu sera flexible */
     display: flex;
@@ -41,11 +61,11 @@ body {
 }
 
 /* les cellules du conteneur général sont aussi des conteneurs div */ 
-.conteneurGlobal div {
+.conteneur {
     /* background-color: var(--couleurFond); */
     /* obéit à la règle flex du conteneur global */
     flex: 1;
-    border: 20px;
+    padding: 10px;
     /* solid var(--couleurFond); */
 }
 

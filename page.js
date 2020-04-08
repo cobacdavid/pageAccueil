@@ -33,6 +33,22 @@ function readTextFile(file, callback) {
     rawFile.send(null);
 }
 
+function recherche() {
+    let e = document.getElementById("barreRecherche");
+    let ma_recherche = e.value;
+    let long = ma_recherche.length;
+    let url = "";
+    console.log(ma_recherche.substr(0, long-1));
+    if (ma_recherche.substr(long-1, long-1) == 'g') {
+        ma_recherche = ma_recherche.substr(0, long-2);
+        url = "https://google.com/search?q=" + ma_recherche;
+    } else {
+        url = "https://duckduckgo.com/?q=" + ma_recherche;
+    }
+    let w = window.open(url, '_blank');
+    w.focus();
+}
+
 
 function ajouteSite (objet) {
     let texte = objet.nom;
@@ -57,8 +73,24 @@ function ajouteSite (objet) {
 
 
 function constructionPage() {
+    // la barre de recherche
+    let div_rec = document.createElement("div");
+    div_rec.classList.add('conteneurRecherche');
+    let form_rec = document.createElement("form");
+    form_rec.onsubmit = recherche;
+    let barre_rec = document.createElement("input");
+    barre_rec.id = 'barreRecherche';
+    barre_rec.placeholder = "Recherche";
+    form_rec.appendChild(barre_rec);
+    let sub_rec = document.createElement("input");
+    sub_rec.classList.add("submitRecherche");
+    sub_rec.type = "submit";
+    form_rec.appendChild(sub_rec);
+    div_rec.appendChild(form_rec);
+    document.body.appendChild(div_rec);
+    // les icônes de site
     let div_gen = document.createElement("div");
-    div_gen.classList.add('conteneurGeneral');
+    div_gen.classList.add('conteneurGeneralIcones');
     // nombre de lignes attendues
     let nbLignes = Math.floor(sites.length / sitesParLigne);
     /* s'il y a un reste de sites sur la dernière ligne
@@ -71,7 +103,7 @@ function constructionPage() {
     for (let l=0; l < nbLignes; l++) {
         // chaque ligne : un div conteneur global
         div_cont = document.createElement("div");
-        div_cont.classList.add('conteneurGlobal');
+        div_cont.classList.add('conteneurLigne');
         /* on ajoute les sites autant que besoin sur chacune
            des premières lignes et on calcule ce qu'on a déjà mis
            pour ne pas dépasser la demande sur la dernière ligne
