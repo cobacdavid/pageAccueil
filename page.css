@@ -35,9 +35,9 @@ body {
     width: 100%;
     font-family: var(--font-family);
     font-size: var(--font-size);
-    color: white;
-    background-color: var(--couleurFond);
-    opacity: .5;
+    color: black;
+    background-color: darkgray;/* var(--couleurFond); */
+    opacity: .4;
     text-align: center;
     border: 0pt;
 }

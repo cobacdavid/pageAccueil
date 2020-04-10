@@ -38,13 +38,17 @@ function recherche() {
     let ma_recherche = e.value;
     let long = ma_recherche.length;
     let url = "";
-    console.log(ma_recherche.substr(0, long-1));
-    if (ma_recherche.substr(long-1, long-1) == 'g') {
+    //
+    if (ma_recherche.substr(long-2, long-1) == ' g') {
         ma_recherche = ma_recherche.substr(0, long-2);
         url = "https://google.com/search?q=" + ma_recherche;
-    } else {
+    } else if(ma_recherche.substr(long-2, long-1) == ' a') {
+        ma_recherche = ma_recherche.substr(0, long-2);
+        url = "https://www.amazon.fr/s?k=" + ma_recherche;
+    }else {
         url = "https://duckduckgo.com/?q=" + ma_recherche;
     }
+    //
     let w = window.open(url, '_blank');
     w.focus();
 }
