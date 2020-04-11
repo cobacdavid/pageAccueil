@@ -15,6 +15,7 @@
     --dureeAnimation: .2s;
     --rotationElement: 0deg;
     --zoom: 1;
+    --transparenceLogo: 0.8;
     font-family: Inconsolata;
     font-size: 30px;
 }
@@ -88,14 +89,13 @@ body {
     height: 100%;
     /* pour l'effet visuel */
     transition: var(--dureeAnimation) ease;
-    opacity: 0.8;
+    opacity: var(--transparenceLogo);
     filter: grayscale(90%);
 }
 
 
 /* interaction passage au-dessus avec l'image */
 .logo:hover {
-    opacity: 1;
     filter: grayscale(0%);
     transform: scale(var(--zoom)) rotate(var(--rotationElement)); 
 }

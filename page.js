@@ -126,6 +126,11 @@ function constructionPage() {
 
 
 function changeAngleAnimation() {
+    let images = document.getElementsByClassName("logo");
+    for (let i=0; i<images.length; i++) {
+        images[i].style.opacity = 0.4;
+    }
+    this.style.opacity = 1;
     document.body.style.backgroundImage = "url(" + this.alt + ")";
     this.parentNode.parentNode.style.zIndex = 2;
     let maxi = angleRotation;
@@ -135,6 +140,10 @@ function changeAngleAnimation() {
 
 
 function reprendPlace() {
+    let images = document.getElementsByClassName("logo");
+    for (let i=0; i<images.length; i++) {
+        images[i].style.opacity = 0.8;
+    }
     document.body.style.backgroundImage = "var(--couleurFond)";
     let position = this.parentNode.parentNode.style.zIndex;
     this.parentNode.parentNode.style.zIndex = 1;

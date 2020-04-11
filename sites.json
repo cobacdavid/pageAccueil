@@ -95,6 +95,13 @@
         "image": "https://img.talkandroid.com/uploads/2013/12/google_play_music_icon.png",
         "bg": "back-googlemusic.png"
         
+    },
+    {
+        "nom": "Météo-France",
+        "url": "http://www.meteofrance.com/previsions-meteo-france/angers/49000",
+        "image": "http://images.sftcdn.net/images/t_optimized,f_auto/p/4d1416d6-a48e-11e6-bec5-00163ec9f5fa/4288914855/meteo-france-logo.png",
+        "bg": "back-meteo.png"
+        
     }
 ]
 
