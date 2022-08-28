@@ -6,20 +6,14 @@
         "bg": "back-duck.png"
     },
     {
-        "nom": "Twitter",
-        "url": "https://twitter.com/home",
-        "image": "https://cdn2.iconfinder.com/data/icons/social-networking-package-1-1/512/networks_-_social_-_web-07-2-512.png",
-        "bg": "back-twitter.png"
-    },
-    {
         "nom": "YouTube",
         "url": "https://www.youtube.com/",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/768px-Youtube_icon.svg.png",
+        "image": "https://purepng.com/public/uploads/large/purepng.com-youtube-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596145hip8d.png",
         "bg": "back-youtube.png"
     },
     {
         "nom": "StackExchange",
-        "url": "https://stackexchange.com/sites#",
+        "url": "https://stackexchange.com/",
         "image": "https://www.feirox.com/rivu/2014/01/Stack-Exchange-1.png",
         "bg": "back-stack.png"
     },
@@ -40,6 +34,12 @@
         "url": "https://awesomewm.org/apidoc/",
         "image": "https://awesomewm.org/apidoc/images/AUTOGEN_wibox_logo_logo_and_name.svg",
         "bg": "back-awesome.png"
+    },
+    {
+        "nom": "Twitter",
+        "url": "https://twitter.com/home",
+        "image": "https://cdn2.iconfinder.com/data/icons/social-networking-package-1-1/512/networks_-_social_-_web-07-2-512.png",
+        "bg": "back-twitter.png"
     },
     {
         "nom": "GMX",
@@ -80,40 +80,14 @@
     {
         "nom": "L'équipe",
         "url": "https://www.lequipe.fr/",
-        "image": "http://unfauxglobe.genty.fr/wp-content/uploads/2015/09/logo-lequipe.png",
+        "image": "https://lh3.googleusercontent.com/EdKCxuKgdzJGciT3IuDmEGQkC9_HLj2RbfN-yco_andKnOnHwPsS9FqsKmXcv0CW8mc=w300",
         "bg": "back-lequipe.png"
     },
     {
         "nom": "Wikipedia",
-        "url": "https://www.wikipedia.com/",
+        "url": "https://www.wikiwand.com/",
         "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/WikiWand_Logo.png",
         "bg": "back-wikipedia.png"
-    },
-    {
-        "nom": "Google Music",
-        "url": "https://play.google.com/music/listen",
-        "image": "https://img.talkandroid.com/uploads/2013/12/google_play_music_icon.png",
-        "bg": "back-googlemusic.png"
-        
-    },
-    {
-        "nom": "Météo-France",
-        "url": "http://www.meteofrance.com/previsions-meteo-france/angers/49000",
-        "image": "http://images.sftcdn.net/images/t_optimized,f_auto/p/4d1416d6-a48e-11e6-bec5-00163ec9f5fa/4288914855/meteo-france-logo.png",
-        "bg": "back-meteo.png"
-        
-    },
-    {
-        "nom": "Imprimantes",
-        "url": "http://localhost:631",
-        "image": "http://icons.iconarchive.com/icons/media-design/hydropro-hardware/512/HP-Printer-icon.png",
-        "bg": "back-cups.png"
-    },
-    {
-        "nom": "Moodle",
-        "url": "http://localhost/moodle",
-        "image": "https://learn.solent.ac.uk/pluginfile.php/1409209/mod_book/chapter/163796/Moodle-icon.png",
-        "bg": "back-moodle.png"
     }
 ]
 

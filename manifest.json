@@ -1,0 +1,9 @@
+{
+    "name": "Nouvel Onglet",
+    "description": "Page de nouvel onglet",
+    "version": "1.0",
+    "manifest_version": 2,
+    "chrome_url_overrides": {
+        "newtab": "page.html?parligne=8&zoom=2"
+    }
+}

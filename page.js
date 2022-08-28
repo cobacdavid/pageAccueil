@@ -39,13 +39,17 @@ function recherche() {
     let long = ma_recherche.length;
     let url = "";
     //
-    if (ma_recherche.substr(long-2, long-1) == ' g') {
+    let suffixe = ma_recherche.substr(long-2, long-1)
+    if (suffixe == ' g') {
         ma_recherche = ma_recherche.substr(0, long-2);
         url = "https://google.com/search?q=" + ma_recherche;
-    } else if(ma_recherche.substr(long-2, long-1) == ' a') {
+    } else if(suffixe == ' a') {
         ma_recherche = ma_recherche.substr(0, long-2);
         url = "https://www.amazon.fr/s?k=" + ma_recherche;
-    }else {
+    } else if(suffixe == ' y') {
+        ma_recherche = ma_recherche.substr(0, long-2);
+        url = "https://www.youtube.com/results?search_query=" + ma_recherche;
+    } else {
         url = "https://duckduckgo.com/?q=" + ma_recherche;
     }
     //
@@ -59,7 +63,7 @@ function ajouteSite (objet) {
     //
     let lien = document.createElement("a");
     lien.classList.add("lien");
-    lien.target = "_blank";
+    // lien.target = "_blank";
     lien.href = objet.url;
     //
     let logo = document.createElement("img");
@@ -84,7 +88,7 @@ function constructionPage() {
     form_rec.onsubmit = recherche;
     let barre_rec = document.createElement("input");
     barre_rec.id = 'barreRecherche';
-    barre_rec.placeholder = "Recherche";
+    barre_rec.placeholder = "ma recherche + (a|g|y) (Amazon|Google|YouTube) ";
     form_rec.appendChild(barre_rec);
     let sub_rec = document.createElement("input");
     sub_rec.classList.add("submitRecherche");
