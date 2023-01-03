@@ -88,7 +88,7 @@ function constructionPage() {
     form_rec.onsubmit = recherche;
     let barre_rec = document.createElement("input");
     barre_rec.id = 'barreRecherche';
-    barre_rec.placeholder = "ma recherche + (a|g|y) (Amazon|Google|YouTube) ";
+    barre_rec.placeholder = "ma recherche + (a|g|y) (Amazon|Google|YouTube)";
     form_rec.appendChild(barre_rec);
     let sub_rec = document.createElement("input");
     sub_rec.classList.add("submitRecherche");
@@ -196,6 +196,7 @@ readTextFile("./sites.json",
                  sites = JSON.parse(text);
                  constructionPage();
                  evenementiel();
+                 document.querySelector('input').focus();
              }
             );
 //

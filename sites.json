@@ -12,14 +12,8 @@
         "bg": "back-youtube.png"
     },
     {
-        "nom": "StackExchange",
-        "url": "https://stackexchange.com/",
-        "image": "https://www.feirox.com/rivu/2014/01/Stack-Exchange-1.png",
-        "bg": "back-stack.png"
-    },
-    {
         "nom": "ProNote",
-        "url": "http://pronote.lyc-moulin-49.ac-nantes.fr/pronote/professeur.html?fd=1&login=true",
+        "url": "https://0492123s.index-education.net/pronote/professeur.html",
         "image": "https://www.index-education.com/contenu/img/fr/faq/icone-PRONOTE-application.png",
         "bg": "back-pronote.png"
     },
@@ -30,16 +24,46 @@
         "bg": "back-jeanmoulin.png"
     },
     {
+        "nom": "Académie",
+        "url": "https://www.ac-nantes.fr/",
+        "image": "https://www.ac-nantes.fr/sites/ac_nantes/files/site_logo/2021-04/logoAC_NANTES.jpg",
+        "bg": "back-acnantes.png"
+    },
+    {
+        "nom": "StackExchange",
+        "url": "https://stackexchange.com/",
+        "image": "https://www.feirox.com/rivu/2014/01/Stack-Exchange-1.png",
+        "bg": "back-stack.png"
+    },
+    {
+        "nom": "Github",
+        "url": "https://github.com/",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png",
+        "bg": "back-github.png"
+    },
+    {
         "nom": "Awesome doc",
         "url": "https://awesomewm.org/apidoc/",
         "image": "https://awesomewm.org/apidoc/images/AUTOGEN_wibox_logo_logo_and_name.svg",
         "bg": "back-awesome.png"
     },
     {
+        "nom": "Advent Of Code",
+        "url": "https://adventofcode.com/",
+        "image": "https://codeheir.com/wp-content/uploads/2021/12/adventofcode.jpg",
+        "bg": "back-aoc.png"
+    },
+    {
         "nom": "Twitter",
         "url": "https://twitter.com/home",
         "image": "https://cdn2.iconfinder.com/data/icons/social-networking-package-1-1/512/networks_-_social_-_web-07-2-512.png",
         "bg": "back-twitter.png"
+    },
+    {
+        "nom": "Mathstodon",
+        "url": "https://mathstodon.xyz/",
+        "image": "https://technofizi.net/wp-content/uploads/2018/07/mastodon_logo.png",
+        "bg": "back-mastodon.png"
     },
     {
         "nom": "GMX",
@@ -72,12 +96,6 @@
         "bg": "back-dealabs.png"
     },
     {
-        "nom": "Github",
-        "url": "https://github.com/",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png",
-        "bg": "back-github.png"
-    },
-    {
         "nom": "L'équipe",
         "url": "https://www.lequipe.fr/",
         "image": "https://lh3.googleusercontent.com/EdKCxuKgdzJGciT3IuDmEGQkC9_HLj2RbfN-yco_andKnOnHwPsS9FqsKmXcv0CW8mc=w300",
@@ -88,6 +106,12 @@
         "url": "https://www.wikiwand.com/",
         "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/WikiWand_Logo.png",
         "bg": "back-wikipedia.png"
+    },
+    {
+        "nom": "lastfm",
+        "url": "https://www.last.fm/",
+        "image": "https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/lastfm-512.png",
+        "bg": "back-lastfm.png"
     }
 ]
 
