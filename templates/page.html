@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='page.css') }}">
+    <title>Ma page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="{{ url_for('static', filename='page.js') }}"></script>
+    <script>
+      var sitesParLigne = {{ sitesParLigne }};
+      var angleRotation = {{ angleRotation }};
+      var zoomIcone = {{ zoomIcone }};
+      document.documentElement.style.setProperty('--zoomIcone', zoomIcone);
+      //
+      var sites = "";
+      readTextFile("{{ url_for('static', filename='sites.json') }}",
+                   function (text) {
+                       sites = JSON.parse(text);
+                       constructionPage(sitesParLigne);
+                       gestionTaille();
+                       evenementiel();
+                       document.querySelector('input').focus();
+                   }
+                  );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

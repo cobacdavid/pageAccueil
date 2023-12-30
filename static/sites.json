@@ -1,0 +1,160 @@
+[
+     
+    {
+        "nom": "DuckDuckGo",
+        "url": "https://www.duckduckgo.com/",
+        "image": "https://upload.wikimedia.org/wikipedia/en/9/90/The_DuckDuckGo_Duck.png",
+        "bg": "back-duck.png"
+    },
+    {
+        "nom": "ProNote",
+        "url": "https://0492123s.index-education.net/pronote/professeur.html",
+        "image": "https://www.index-education.com/contenu/img/fr/faq/icone-PRONOTE-application.png",
+        "bg": "back-pronote.png"
+    },
+    {
+        "nom": "Lycée",
+        "url": "https://jean-moulin.paysdelaloire.e-lyco.fr/",
+        "image": "https://cdn4.iconfinder.com/data/icons/ios-web-user-interface-multi-circle-flat-vol-3/512/Bag_briefcase_business_case_job_portfolio_suitcase-512.png",
+        "bg": "back-jeanmoulin.png"
+    },
+    {
+        "nom": "Académie",
+        "url": "https://www.ac-nantes.fr/",
+        "image": "https://www.ac-nantes.fr/sites/ac_nantes/files/site_logo/2021-04/logoAC_NANTES.jpg",
+        "bg": "back-acnantes.png"
+    },
+    {
+        "nom": "OSM",
+        "url": "https://www.openstreetmap.org/",
+        "image": "https://wiki.lafabriquedesmobilites.fr/images/fabmob/2/2b/OSMlogo.png",
+        "bg": "back-osm.png"
+    },
+    {
+        "nom": "StackExchange",
+        "url": "https://stackexchange.com/",
+        "image": "https://www.feirox.com/rivu/2014/01/Stack-Exchange-1.png",
+        "bg": "back-stack.png"
+    },
+    {
+        "nom": "Github",
+        "url": "https://github.com/",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png",
+        "bg": "back-github.png"
+    },
+    {
+        "nom": "Awesome doc",
+        "url": "https://awesomewm.org/apidoc/",
+        "image": "https://awesomewm.org/apidoc/images/AUTOGEN_wibox_logo_logo_and_name.svg",
+        "bg": "back-awesome.png"
+    },
+    {
+        "nom": "Advent Of Code",
+        "url": "https://adventofcode.com/",
+        "image": "https://codeheir.com/wp-content/uploads/2021/12/adventofcode.jpg",
+        "bg": "back-aoc.png"
+    },
+    {
+        "nom": "X",
+        "url": "https://x.com/home",
+        "image": "https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png",
+        "bg": "back-twitter.png"
+    },
+    {
+        "nom": "Mathstodon",
+        "url": "https://mathstodon.xyz/",
+        "image": "https://technofizi.net/wp-content/uploads/2018/07/mastodon_logo.png",
+        "bg": "back-mastodon.png"
+    },
+    {
+        "nom": "Gmail",
+        "url": "https://mail.google.com/mail/",
+        "image": "https://thebottomline.as.ucsb.edu/wp-content/uploads/2018/05/Gmail_logo.max-2800x2800-1024x1024.png",
+        "bg": "back-gmail.png"
+    },
+    {
+        "nom": "GMX",
+        "url": "https://www.gmx.fr/",
+        "image": "https://buyaccbulk.com/wp-content/uploads/2018/01/gmx1.png",
+        "bg": "back-gmx.png"
+    },
+    {
+        "nom": "L'équipe",
+        "url": "https://www.lequipe.fr/",
+        "image": "https://lh3.googleusercontent.com/EdKCxuKgdzJGciT3IuDmEGQkC9_HLj2RbfN-yco_andKnOnHwPsS9FqsKmXcv0CW8mc=w300",
+        "bg": "back-lequipe.png"
+    },
+    {
+        "nom": "20minutes",
+        "url": "https://www.20minutes.fr/",
+        "image": "https://www.summit-foundation.org/wp/wp-content/uploads/2015/07/20_minutes_Suisse_2013_logo_3-01.png",
+        "bg": "back-20minutes.png"
+    },
+    {
+        "nom": "Météo-France",
+        "url": "https://meteofrance.com/previsions-meteo-france/angers/49000",
+        "image": "https://meteofrance.com/sites/meteofrance.com/files/logo/LOGO_MF.png",
+        "bg": "back-meteo.png"
+    },
+    {
+        "nom": "Wikipedia",
+        "url": "https://www.wikiwand.com/",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/WikiWand_Logo.png",
+        "bg": "back-wikipedia.png"
+    },
+    {
+        "nom": "lastfm",
+        "url": "https://www.last.fm/",
+        "image": "https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/lastfm-512.png",
+        "bg": "back-lastfm.png"
+    },
+    {
+        "nom": "YouTube",
+        "url": "https://music.youtube.com/",
+        "image": "https://purepng.com/public/uploads/large/purepng.com-youtube-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596145hip8d.png",
+        "bg": "back-youtube.png"
+    },
+    {
+        "nom": "Amazon",
+        "url": "https://www.amazon.fr/",
+        "image": "https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/Amazon-512.png",
+        "bg": "back-amazon.png"
+    },
+    {
+        "nom": "Le bon coin",
+        "url": "https://www.leboncoin.fr/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPU7-LfkB3DNLNflxmp5t2k4t6QtwVM5ou6w&usqp=CAU",
+        "bg": "back-leboncoin.png"
+    },
+    {
+        "nom": "Dealabs",
+        "url": "https://www.dealabs.com/",
+        "image": "https://reports.exodus-privacy.eu.org/fr/reports/673/icon/",
+        "bg": "back-dealabs.png"
+    },
+    {
+        "nom": "Pi-Hole",
+        "url": "http://pi.hole/admin",
+        "image": "https://virtualestateplanner.github.io/MegaDocker/static/media/piholeIcon.7339fee8.png",
+        "bg": "back-pihole.png"
+    },
+    {
+        "nom": "Freebox",
+        "url": "http://mafreebox.freebox.fr/",
+        "image": "https://www.myservicebox.fr/wp-content/uploads/sites/5/2022/09/freebox-mini-4K-300x300.png",
+        "bg": "back-freebox.png"
+    },
+    {
+        "nom": "Cups",
+        "url": "http://localhost:631",
+        "image": "https://openprinting.github.io/cups/images/cups.png",
+        "bg": "back-cups.png"
+    },
+    {
+        "nom": "Brother MFC-9330CDW",
+        "url": "http://192.168.1.16",
+        "image": "https://www.brother.fr/-/media/product-images/devices/printers/mfc/mfc9330cdw/mfc9330cdw_left.png",
+        "bg": "back-brother.png"
+    }
+]
+
