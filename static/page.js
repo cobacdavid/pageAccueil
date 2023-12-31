@@ -10,7 +10,6 @@
    https://github.com/OneGuyy
 */
 
-
 /* Fonction suivante venant de
    https://stackoverflow.com/questions/19706046/how-to-read-an-external-local-json-file-in-javascript#24378510
    
@@ -33,16 +32,35 @@ function readTextFile(file, callback) {
     rawFile.send(null);
 }
 
+
+/* Fonction suivante récupérée sur
+  https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
+  Elle va permettre de saisir des URL sans http(s) et se voir
+  reconnaître comme tel.
+*/
+function validURL(str) {
+    let pattern = new RegExp(// on ignore le protocole '^(https?:\\/\\/)?'+ // protocol
+    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
+    '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
+    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
+    '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
+    '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
+  return !!pattern.test(str);
+}
+
 function recherche() {
     let e = document.getElementById("barreRecherche");
     let ma_recherche = e.value;
+    //
     let long = ma_recherche.length;
     let url = "";
     //
     let suffixe = ma_recherche.substr(long-2, long-1)
     let prefixe = ma_recherche.substr(0, 4)
     if (prefixe == "http") {
-        url = ma_recherche
+        url = ma_recherche;
+    } else if (validURL(ma_recherche)) {
+        url = 'https://' + ma_recherche;
     } else if (suffixe == ' g') {
         ma_recherche = ma_recherche.substr(0, long-2);
         url = "https://google.com/search?q=" + ma_recherche;
@@ -191,6 +209,8 @@ function evenementiel() {
 }
 
 function gestionTaille() {
+    // gestion du changmeent de dimension, et d'ouverture en
+    // situation genre portrait
     if (($(window).width() < 1080) && (sitesParLigne > 5)) {
         sitesParLigne = Math.floor(sitesParLigne / 2);
         let divElement = document.getElementById('conteneurGeneralIcones');
@@ -205,5 +225,5 @@ function gestionTaille() {
 
 }
 
-
+// gestion du changement de dimension
 $(window).resize(gestionTaille);
